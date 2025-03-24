@@ -77,7 +77,7 @@ Este es un ejemplo de formulario:
 ```
 ### Etiqueta interesante
 
-Ejemplo para mostrar como hacer tablas:
+Ejemplo para mostrar cómo hacer tablas:
 
 | Concepto     | Descripción                                                             | Uso Principal                           |
 |--------------|-------------------------------------------------------------------------|-----------------------------------------|
