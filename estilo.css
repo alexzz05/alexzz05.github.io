@@ -1,0 +1,114 @@
+
+
+html{
+    height: 100%;  /* Ocupan el 100% de la ventana del navegador */
+}
+
+main {
+    flex: 1;  /* Hace que el main ocupe el espacio restante entre header y footer */
+}
+
+p{
+    color: white;  /* Todo el texto */
+    text-align: justify;  /* Justifica el texto */
+    line-height: 1.6;     /* Mejora la legibilidad */
+    margin-bottom: 20px;  /* Añade separación entre párrafos */
+    letter-spacing: 2px; 
+}
+
+header h1{
+    color: white;
+    margin-top: 180px;  /* Espacio para que el h1 no quede tapado por el nav fijo */
+    font-family: 'Poppins', sans-serif;  /* Aplica la fuente Poppins */
+    font-weight: 700;  /* Negrita para destacar el título */
+    font-size: 30px;  /* Tamaño más grande para resaltar */
+    letter-spacing: 2px; 
+}
+
+
+h2{
+    color: #ECDFCC;
+    text-decoration: underline;
+}
+
+h3{
+    color: white;
+}
+
+body{
+    margin: 0 32px 0 32px;
+    background-color: #1E201E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    height: 100%;  /* Ocupan el 100% de la ventana del navegador */
+}
+
+header nav{
+    padding: 50px 0;
+    position: fixed;  /* Hace que el nav quede fijo arriba */
+    top: 0;
+    width: 100%;  /* Para que ocupe todo el ancho */
+    height: 0.1%;
+    z-index: 1000;  /* Asegura que el nav esté por encima del resto del contenido */
+    display: block;
+    background-color: #697565;
+    margin-bottom: 20px;
+    padding: 100px;
+    margin: -100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+header nav ul li{
+    margin-right: 140px;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-size: 18px;  /* Tamaño más grande para resaltar */
+    margin-top: 25px;
+}
+nav a{
+    color: #ECDFCC;
+    text-decoration: none;
+}
+p a {
+    color: #697565;  /* Color del enlace normal */
+    text-decoration: none;  /* Opcional: quitar subrayado */
+    font-weight: bold; 
+}
+
+footer {
+    display: block;
+    background-color: #697565;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: -32px;
+    height: 2%;
+}
+
+footer p{
+    display: block;
+    margin-top: 10px;
+    color: #ECDFCC;
+    margin-bottom: -30px;
+}
+
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+}
+
+footer nav ul li{
+    margin-right: 50px;
+    letter-spacing: 2px;
+    font-size: 17px;  /* Tamaño más grande para resaltar */
+    margin-top: -10px;
+}

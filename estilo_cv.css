@@ -1,0 +1,117 @@
+
+
+html{
+    height: 100%;  /* Ocupan el 100% de la ventana del navegador */
+}
+
+main {
+    flex: 1;  /* Hace que el main ocupe el espacio restante entre header y footer */
+    min-height: calc(100vh - 100px);  /* Ajusta 100px según la altura de tu header y footer */
+
+}
+
+
+
+header h1{
+    color: white;
+    margin-top: 250px;  /* Espacio para que el h1 no quede tapado por el nav fijo */
+    font-family: 'Poppins', sans-serif;  /* Aplica la fuente Poppins */
+    font-weight: 700;  /* Negrita para destacar el título */
+    font-size: 30px;  /* Tamaño más grande para resaltar */
+    letter-spacing: 3px; 
+}
+
+
+h2{
+    color: #ECDFCC;
+    text-decoration: underline;
+}
+
+h3{
+    color: #ECDFCC;
+    margin-top: 30px;
+}
+
+body{
+    margin: 0 32px 0 32px;
+    background-color: #1E201E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    height: 100%;  /* Ocupan el 100% de la ventana del navegador */
+    
+}
+
+
+ul {
+    list-style-type: none;  /* Eliminar los puntos de la lista si es necesario */
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;  /* Margen entre elementos normales */
+    color: #697565;
+}
+
+li strong {
+    display: block;  /* Hace que <strong> ocupe su propio "bloque" */
+    margin-top: 25px;  /* Margen superior más grande para separarlo del anterior */
+    margin-bottom: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+p{
+    color: white;
+    
+}
+
+
+p:nth-of-type(3), p:nth-of-type(6){
+    color: #697565;  /* Aplica el color verde al segundo y cuarto <p> */
+}
+
+
+footer {
+    display: flex;                     /* Habilita flexbox */
+    justify-content: space-between;    /* Distribuye los elementos */
+    background-color: #697565;         /* Color de fondo */
+    color: #f8e9c4;                    /* Color del texto */
+    margin: 0px -32px 50px ;
+
+}
+
+nav a {
+    color: #f8e9c4;
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+footer p{
+    display: block;
+    color: #ECDFCC;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    margin-top: 18px;
+
+}
+
+footer nav ul li a{
+    margin-right: 40px;
+    letter-spacing: 2px;
+    font-size: 15px;  /* Tamaño más grande para resaltar */
+    margin-top: 0px;
+    color: #ECDFCC;
+    text-decoration: none;
+    background-color: #697565;
+}
