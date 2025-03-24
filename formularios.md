@@ -59,3 +59,20 @@ Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
 > <p><label for="campo-nombre">Nombre: </label><input type="text" name="nombre" id="campo-nombre" /></p>
 > ```
 > También se puede vincular una etiqueta a un elemento colocando el elemento dentro de `<label>` <label>.
+
+## Ejemplo
+
+Este es un ejemplo de formulario
+
+```html
+<form>
+    <p><label for="campo-nombre">Nombre: </label><input type="text" name="nombre" id="campo-nombre" /></p>
+    <p>Password: <input type="number" name="edad" min="1" max="120" /></p>
+    <p>Edad: <input type="date" name="nacimiento" /></p>
+				
+    <p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe"> Acepto suscribirme </label></p>
+
+    <p><input type="submit" /></p>
+
+</form>
+```
