@@ -77,10 +77,10 @@ Este es un ejemplo de formulario:
 ```
 ### Etiqueta interesante
 
-Ejemplo para mostrar como hacer tablas
+Ejemplo para mostrar como hacer tablas:
 
-| Producto      | Precio | Disponibilidad |
-|---------------|--------|----------------|
-| Camisa        | $25    | En stock       |
-| Pantalones    | $40    | Agotado        |
-| Zapatos       | $60    | En stock       |
+| Concepto     | Descripción                                                             | Uso Principal                           |
+|--------------|-------------------------------------------------------------------------|-----------------------------------------|
+| **HTML**     | Lenguaje de marcado utilizado para estructurar contenido en la web.      | Crear la estructura básica de páginas.  |
+| **CSS**      | Lenguaje de hojas de estilo utilizado para diseñar la apariencia de páginas. | Estilizar y dar formato a elementos.    |
+| **Markdown** | Lenguaje de marcado ligero para formatear texto de manera sencilla.      | Crear documentos con formato sin complicaciones. |
