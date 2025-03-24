@@ -62,7 +62,7 @@ Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
 
 ## Ejemplo
 
-Este es un ejemplo de formulario
+Este es un ejemplo de formulario:
 
 ```html
 <form>
@@ -75,3 +75,12 @@ Este es un ejemplo de formulario
     <p><input type="submit" /></p>
 </form>
 ```
+### Etiqueta interesante
+
+Ejemplo para mostrar como hacer tablas
+
+| Producto      | Precio | Disponibilidad |
+|---------------|--------|----------------|
+| Camisa        | $25    | En stock       |
+| Pantalones    | $40    | Agotado        |
+| Zapatos       | $60    | En stock       |
