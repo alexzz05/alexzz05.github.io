@@ -46,5 +46,8 @@ La etiqueta `<label>` es un elemento en linea que  nos permite vinncular el `<in
 
 Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
 
-Usuarios con lectores de pantalla (will read out loud the label, when the user is focused on the element)
-Usuarios con dificultad para marcar los campos pequenos (como los ***checkboxes***) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). 
+- Usuarios con lectores de pantalla
+    --> el nombre del campo se leera en alto cuando el usuario pase por encima del elemento
+
+- Usuarios con dificultad para marcar los campos pequenos (como los ***checkboxes***)
+    --> el `<input>` se activa para escribir cuando el usuario hace clic sobre el `<label>` del elemento (lo que aumenta el area de clic)
