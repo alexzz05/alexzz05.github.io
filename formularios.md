@@ -42,7 +42,7 @@ Existen varios tipos de `<input>`:
 
 La etiqueta `<label>` es un elemento en linea que  nos permite vincular el `<input>` del campo con el nombre del campo. De esta manera el usuario puede hacer clic tanto en el nombre como en el input para rellenar la informacion correspondiente.
 
-#### Ventajas de la etiqueta `<label>`
+#### Ventajas de la etiqueta `<label>`:
 
 Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
 
@@ -58,8 +58,4 @@ Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
 > ```html
 > <p><label for="campo-nombre">Nombre: </label><input type="text" name="nombre" id="campo-nombre" /></p>
 > ```
-> También se puede vincular una etiqueta a un elemento colocando el elemento dentro del elemento <label>.
->
->```html
-><p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe"> Acepto suscribirme </label></p>
->```
+> También se puede vincular una etiqueta a un elemento colocando el elemento dentro de `<label>` <label>.
