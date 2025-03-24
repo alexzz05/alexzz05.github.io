@@ -67,12 +67,11 @@ Este es un ejemplo de formulario
 ```html
 <form>
     <p><label for="campo-nombre">Nombre: </label><input type="text" name="nombre" id="campo-nombre" /></p>
-    <p>Password: <input type="number" name="edad" min="1" max="120" /></p>
-    <p>Edad: <input type="date" name="nacimiento" /></p>
-				
+    <p><label for="campo-edad">Password: </label><input type="number" name="edad" min="1" max="120" id="campo-edad" /></p>
+    <p><label for="campo-nacimiento">Edad: </label><input type="date" name="nacimiento" id="campo-nacimiento" /></p>
+    
     <p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe"> Acepto suscribirme </label></p>
 
     <p><input type="submit" /></p>
-
 </form>
 ```
