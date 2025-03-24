@@ -6,7 +6,7 @@ Los campos del formulario deben ir dentro de la etiqueta `<form>`.
 
 ## Campos
 
-La etiqueta `<input>` es el elemento principal de los formularios. Nos permite especificar el tipo de informacion que queremos que el usuario introduzca en el campo.
+La etiqueta `<input>` es el elemento principal de los formularios. Nos permite especificar el tipo de información que queremos que el usuario introduzca en el campo.
 El `<input>` puede tomar formas distintas dependiendo del atributo *`type`*.
 
 Existen varios tipos de `<input>`:
@@ -36,21 +36,21 @@ Existen varios tipos de `<input>`:
 <input type="week">
 ```
 > [!NOTE]
-> Si no especificamos de que tipo queremos que sea el `<input>` con el atributo *`type`*, HTML escogera `type="text"` por defecto.
+> Si no especificamos de qué tipo queremos que sea el `<input>` con el atributo *`type`*, HTML escogerá `type="text"` por defecto.
 
 ### Etiqueta `<label>`
 
-La etiqueta `<label>` es un elemento en linea que  nos permite vincular el `<input>` del campo con el nombre del campo. De esta manera el usuario puede hacer clic tanto en el nombre como en el input para rellenar la informacion correspondiente.
+La etiqueta `<label>` es un elemento en línea que  nos permite vincular el `<input>` del campo con el nombre del campo. De esta manera, el usuario puede hacer clic tanto en el nombre como en el input para rellenar la información correspondiente.
 
 #### Ventajas de la etiqueta `<label>`:
 
-Un uso correcto de esta etiqueta beneficiara a los siguientes usuarios:
+Un uso correcto de esta etiqueta beneficiará a los siguientes usuarios:
 
 - Usuarios con lectores de pantalla
-    --> el nombre del campo se leera en alto cuando el usuario pase por encima del elemento
+    --> el nombre del campo se leerá en alto cuando el usuario pase por encima del elemento
 
-- Usuarios con dificultad para marcar los campos pequenos (como los ***checkboxes***)
-    --> el `<input>` se activa para escribir cuando el usuario hace clic sobre el `<label>` del elemento (lo que aumenta el area de clic)
+- Usuarios con dificultad para marcar los campos pequeños (como los ***checkboxes***)
+    --> el `<input>` se activa para escribir cuando el usuario hace clic sobre el `<label>` del elemento (lo que aumenta el área de clic)
 
 > [!TIP]
 > El atributo ***`for`*** de `<label>` debe ser igual al atributo ***`id`*** del elemento relacionado para vincularlos.
