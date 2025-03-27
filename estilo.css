@@ -1,11 +1,39 @@
 
 
-html{
-    height: 100%;  /* Ocupan el 100% de la ventana del navegador */
-}
 
 main {
-    flex: 1;  /* Hace que el main ocupe el espacio restante entre header y footer */
+    
+    min-height: calc(111.65vh - 500px);  /* Ajusta según la altura del header y footer */
+
+}
+
+header nav{
+    padding: 50px 0;
+    position: fixed;  /* Hace que el nav quede fijo arriba */
+    top: 0;
+    width: 100%;  /* Para que ocupe todo el ancho */
+    height: 0.1%;
+    z-index: 1000;  /* Asegura que el nav esté por encima del resto del contenido */
+    display: block;
+    background-color: #697565;
+    margin-bottom: 20px;
+    padding: 100px;
+    margin: -100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+header nav ul li{
+    margin-right: 140px;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-size: 18px;  /* Tamaño más grande para resaltar */
+    margin-top: 25px;
 }
 
 p{
@@ -14,6 +42,12 @@ p{
     line-height: 1.6;     /* Mejora la legibilidad */
     margin-bottom: 20px;  /* Añade separación entre párrafos */
     letter-spacing: 2px; 
+}
+
+p a {
+    color: #697565;  /* Color del enlace normal */
+    text-decoration: none;  /* Opcional: quitar subrayado */
+    font-weight: bold; 
 }
 
 header h1{
@@ -45,42 +79,10 @@ body{
     height: 100%;  /* Ocupan el 100% de la ventana del navegador */
 }
 
-header nav{
-    padding: 50px 0;
-    position: fixed;  /* Hace que el nav quede fijo arriba */
-    top: 0;
-    width: 100%;  /* Para que ocupe todo el ancho */
-    height: 0.1%;
-    z-index: 1000;  /* Asegura que el nav esté por encima del resto del contenido */
-    display: block;
-    background-color: #697565;
-    margin-bottom: 20px;
-    padding: 100px;
-    margin: -100px;
-}
 
-header nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    
-}
-
-header nav ul li{
-    margin-right: 140px;
-    justify-content: center;
-    letter-spacing: 3px;
-    font-size: 18px;  /* Tamaño más grande para resaltar */
-    margin-top: 25px;
-}
 nav a{
     color: #ECDFCC;
     text-decoration: none;
-}
-p a {
-    color: #697565;  /* Color del enlace normal */
-    text-decoration: none;  /* Opcional: quitar subrayado */
-    font-weight: bold; 
 }
 
 footer {
@@ -89,7 +91,6 @@ footer {
     margin-bottom: 20px;
     padding: 20px;
     margin: -32px;
-    height: 2%;
 }
 
 footer p{
