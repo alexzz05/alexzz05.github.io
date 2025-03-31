@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	
+	<head> 
+		<title>Mi fantástica web</title>
+		
+		<style>
+			/* Estilo para los campos vacíos (con borde rojo) */
+			.invalid {
+				border: 1px solid red;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<header>
+			
+			<h1>Contact</h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="minigame.html">Minigame</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			
+			<form id=" contact-form">
+				<p><label for="field-nombre">Nombre: </label><input type="text" name="name" id="field-nombre" /></p>
+				<p><label for="field-age">Password: </label><input type="number" name="age" min="1" max="120" id="field-age" /></p>
+				<p><label for="field-birth">Edad: </label><input type="date" name="birth" id="field-birth" /></p>
+				
+				<p><input type="checkbox" name="subscribe" id="subscribe" /><label for="subscribe"> Acepto suscribirme </label></p>
+			
+				<p><label for ="submit-field"></label><input type="submit" name="submit" id="submit-field" value="Submit" onClick="empty_field_checker();" /></p>
+			</form>
+			
+
+		</main>
+		
+		<footer>
+			<p>Alex Zafra &copy 2025 </p>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="minigame.html">Minigame</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script>
+		
+		</script>
+	</body>	
+</html>
