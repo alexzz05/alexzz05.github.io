@@ -1,0 +1,321 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*------------------------- HEADER */
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+header nav ul a{
+    margin-right: 2.5px;
+    justify-content: center;
+
+   
+}
+
+header nav {
+    position: relative;
+    width: 524px;
+    height: 50px;
+    background: #1a1f2b;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+    transition: color 0.3s ease;
+    flex: 1; /* Asegura que cada enlace tenga el mismo tamaño */
+    text-align: center; /* Centra el texto dentro del enlace */
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #1a1e60, #005b99);
+    border-radius: 8px;
+    transition: .5s ease;
+    
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+nav a:nth-child(2):hover~span {
+    left: 95px;
+}
+nav a:nth-child(3):hover~span {
+    left: 189px;
+    width: 110px;
+}
+nav a:nth-child(4):hover~span {
+    left: 298px;
+    width: 115px;
+}
+nav a:nth-child(5):hover~span {
+    left: 413px;
+    width: 110px;
+}
+
+/*------------------------- HEADER <a> POSITION*/
+nav a:nth-child(2) {
+    left: 12px;
+}
+
+nav a:nth-child(3) {
+    left: 21px;
+}
+
+nav a:nth-child(4) {
+    left: 17px;
+}
+
+nav a:nth-child(5) {
+    left: 10px;
+}
+
+/*------------------------- BODY*/
+
+body{
+    background-color: #0e1014;
+}
+
+body p{
+    color: white;
+}
+
+/*------------------------- FOOTER HOVER ANIMATION*/
+
+footer nav a:hover{
+    background: linear-gradient(45deg, #1a1e60, #003f73);  /* Gradient */
+    scale: 110%;
+}
+
+/*------------------------- ABOUT CARD content */
+
+#about h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+#about h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+section#about{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: cennter;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#about p{
+    font-size: 20px;
+}
+
+#about em{
+    display: flexbox;
+    margin-right: 3px;
+}
+
+#educational-institution{
+    display: flexbox;
+    margin-left: 3px;
+}
+
+
+#about a, #about a:visited{
+    text-decoration: none;
+    color: #005baF;
+}
+
+#about span{
+    display:block;
+    margin-top:20px;
+    margin-bottom: 45px;
+}
+
+#socials-link ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 480px;
+    margin-right: 550px;
+}
+
+#socials-link ul li{
+    display: flex;
+
+}
+
+.github-mark{
+	height: 64px;
+	width: auto;
+}
+
+.linkedin-mark{
+	height: 64px;
+	width: auto;
+}
+/*------------------------- FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 5%;
+
+    background-color: #11141a;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+    padding-top: 22px;
+    margin-right: 30px;
+}
+
+
+footer nav ul li{
+    margin-right: 10px;
+    justify-content: center;
+   
+}
+
+footer nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 350;
+    margin-left: 35px;
+    transition: .3s;
+    border-radius: 8px;
+
+}
+
+footer p{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    margin-top: -22px;
+
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+/*  COLOR PALLETTE 
+
+#11141a;
+#0e1014
+
+*/
+
+/*------------------------------------------ ANIMATTIONS */
+
+
+/* HOME GLOWING EFFECT CARD */
+
+.card{
+    margin: 0 auto;
+    padding: 110px;
+    width: 1400px;
+    height: 520px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .card::after, .card::before{
+    --angle: 0deg;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #1a1e60, #003f73);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 10px;
+    animation: 2s spin linear infinite;
+  }
+  .card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+
+/* SOCIALS ICOSNS */
+
+
