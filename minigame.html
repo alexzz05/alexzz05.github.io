@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	
+	<head> 
+		<title>Mi fantástica web</title>
+		
+        <style>
+           
+        .input-error {
+            border: 1px solid red;
+        }
+
+        .you-win {
+            color: green;
+        }
+
+        .error {
+        color: red;
+        }
+
+      
+        
+        </style>
+
+	</head>
+	
+	<body>
+		<header>
+			
+			<h1>Minigame</h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cv.html">CV</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+					<li><a href="minigame.html">Minigame</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+		
+            <form>
+                <h2 class="game-title">Guess the number</h2>
+                <p>Guess the generated number. It is a number between the <strong>1</strong> and <strong>100</strong>.</p>
+        
+                <p id="number-result">Try your luck!</p>
+				
+				<label for="number">Tu numero: </label><input type="number" id="field-number" name="number">
+                <p><label for ="field-button"></label><input type="button" name="button" id="field-button" value="Guess!" onClick="compare_number();" /></p>
+            </form>
+              
+
+		</main>
+		
+		<script>
+	
+	
+    let counter = 1; // contador de aciertos
+    let maxAttempts = 10; // limite de intentos
+	
+    let random_number = Math.floor(Math.random()*100)+1; // numero random entre el 1 - 100
+	
+    function compare_number (){
+
+            let button_input = document.getElementById("field-button");
+            button_input.value = "Guess! ("+counter+")";
+            
+            let my_num_input = document.getElementById("field-number");
+            let my_num = my_num_input.value;
+            
+            let result = document.getElementById("number-result");
+            
+            my_num_input.classList.remove("input-error"); 
+            
+            if (isNaN(my_num) || my_num == "") { 
+                my_num_input.classList.add("input-error"); 
+                console.log("Error 1: Your number it's empty or is not a number.");
+                return;
+            }
+            
+            else if (my_num < 1 || my_num > 100) {
+                my_num_input.classList.add("input-error");
+                console.log("Error 2: Your number is smaller than 1 or bigger than 100.");
+                return;
+            }
+            
+            else {
+                counter++;
+                
+                
+                if (counter > maxAttempts) {
+                    button_input.disabled = true; 
+                    console.log("Error 3: You've reached the maximum number of attempts."); 
+                    my_num_input.classList.remove("input-error"); // Quita la clase input-error cuando el número no válido
+                    result.innerHTML = "<em class=\"error\"><strong>Game over!</strong> You've reached the maximum number of attempts."; // Mostramos el mensaje de que se han terminado los intentos
+                    return;
+                }
+                
+                if (my_num > random_number) {
+                    result.innerHTML = "<em class=\"error\">The number to be guessed is <strong>less</strong> than "+my_num+".</em>";
+                    my_num_input.classList.add("input-error"); // Añade la clase input-error cuando el número no es válido 
+                }
+                
+                else if (my_num < random_number) {
+                    result.innerHTML = "<em class=\"error\">The number to be guessed is <strong>greater</strong> than "+my_num+".</em>";
+                    my_num_input.classList.add("input-error"); // Añade la clase input-error cuando el número no es válido
+                }
+                
+                else {
+                    result.innerHTML = "<strong class=\"you-win\">You got it right, it was "+my_num+"!</strong>";
+                    my_num_input.classList.remove("input-error"); // Quita la clase input-error cuando el número es válido
+                }
+                
+                my_num_input.value = "";
+                
+                my_num_input.focus();
+            }
+	}
+			
+			</script>
+
+	</body>
+</html>
+
+
