@@ -43,7 +43,6 @@ header nav ul {
 header nav ul a{
     margin-right: 2.5px;
     justify-content: center;
-
    
 }
 
@@ -56,6 +55,11 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 nav a {
     position: relative;
@@ -68,6 +72,11 @@ nav a {
     transition: color 0.3s ease;
     flex: 1; /* Asegura que cada enlace tenga el mismo tamaño */
     text-align: center; /* Centra el texto dentro del enlace */
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav span {
@@ -82,14 +91,17 @@ nav span {
     
 }
 
+/* ajustes del indicador nav*/
 nav a:nth-child(1):hover~span {
     left: 0;
+    width: 100px;
 }
 nav a:nth-child(2):hover~span {
-    left: 95px;
+    left: 97px;
+    width: 100px;
 }
 nav a:nth-child(3):hover~span {
-    left: 189px;
+    left: 195px;
     width: 110px;
 }
 nav a:nth-child(4):hover~span {
@@ -101,7 +113,7 @@ nav a:nth-child(5):hover~span {
     width: 110px;
 }
 
-/*------------------------- HEADER <a> POSITION*/
+/*------------------------- HEADER nav <a> POSITION*/
 nav a:nth-child(2) {
     left: 12px;
 }
@@ -257,14 +269,7 @@ footer p{
     letter-spacing: 0.5px;
 }
 
-/*  COLOR PALLETTE 
-
-#11141a;
-#0e1014
-
-*/
-
-/*------------------------------------------ ANIMATTIONS */
+/*------------------------------------------ ANIMATIONS */
 
 
 /* HOME GLOWING EFFECT CARD */
@@ -316,6 +321,5 @@ footer p{
   }
 
 
-/* SOCIALS ICOSNS */
 
 
